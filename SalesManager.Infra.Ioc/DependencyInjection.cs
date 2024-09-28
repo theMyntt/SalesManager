@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SalesManager.Infra.Data.Context;
+using SalesManager.Infra.Data.Interfaces;
+using SalesManager.Infra.Data.Repositories;
 
 namespace SalesManager.Infra.Ioc
 {
@@ -18,6 +20,9 @@ namespace SalesManager.Infra.Ioc
 					ServerVersion.AutoDetect(connectionString),
 					options => options.MigrationsAssembly(typeof(DatabaseContext).Assembly.FullName));
 			});
+
+			// Repositories
+			services.AddScoped<IUserRepository, UserRepository>();
 
 			return services;
 		}
