@@ -31,7 +31,7 @@ namespace SalesManager.Domain.Entities
 		[Column("TX_ATUALIZADO_EM")]
 		public long UpdatedAt { get; private set; }
 
-		private User()
+		public User()
 		{
 		}
 
