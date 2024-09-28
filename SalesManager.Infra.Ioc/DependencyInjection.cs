@@ -16,7 +16,7 @@ namespace SalesManager.Infra.Ioc
 			{
 				options.UseMySql(connectionString,
 					ServerVersion.AutoDetect(connectionString),
-					options => options.MigrationsAssembly(typeof(DatabaseContext).Assembly.FullName);
+					options => options.MigrationsAssembly(typeof(DatabaseContext).Assembly.FullName));
 			});
 
 			return services;
