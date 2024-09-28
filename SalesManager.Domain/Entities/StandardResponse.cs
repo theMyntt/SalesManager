@@ -6,7 +6,7 @@ namespace SalesManager.Domain.Entities
 		public required string Message { get; set; }
 		public required int StatusCode { get; set; }
 
-		private StandardResponse() { }
+		public StandardResponse() { }
 	}
 }
 
