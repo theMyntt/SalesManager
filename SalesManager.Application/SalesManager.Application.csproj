@@ -8,5 +8,19 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalesManager.Domain\SalesManager.Domain.csproj" />
+    <ProjectReference Include="..\SalesManager.Infra.Data\SalesManager.Infra.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Usecases\" />
+    <None Remove="Interfaces\" />
+    <None Remove="DTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usecases\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Interfaces\IUserUsecase.cs" />
   </ItemGroup>
 </Project>
