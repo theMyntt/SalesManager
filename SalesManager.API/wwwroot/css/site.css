@@ -1,22 +1,37 @@
-﻿html {
-  font-size: 14px;
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header {
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+header > nav {
+    display: flex;
+    justify-content: space-between;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+header > nav > .side {
+    display: inherit;
+    align-items: center;
+    gap: 20px;
 }
 
-body {
-  margin-bottom: 60px;
+header > nav > .side > p {
+    transition: 0.3s;
+}
+
+header > nav > .side > p:hover {
+    font-weight: 700;
+}
+
+#header-block {
+    margin-top: 88px;
 }
