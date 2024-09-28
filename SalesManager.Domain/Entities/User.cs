@@ -1,15 +1,34 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace SalesManager.Domain.Entities
 {
 	public class User
 	{
+		[Key]
+		[Column("TX_ID")]
 		public Guid Id { get; private set; }
+
+		[Column("TX_NOME")]
 		public string Name { get; set; }
+
+		[Column("TX_LOGIN")]
 		public string UserName { get; private set; }
+
+		[Column("TX_EMAIL")]
 		public string Email { get; set; }
+
+		[Column("TX_SENHA")]
 		public string Password { get; set; }
+
+		[Column("TX_BLOQUEADO")]
 		public UserStatus IsActive { get; set; }
+
+		[Column("TX_CRIADO_EM")]
 		public long CreatedAt { get; private set; }
+
+		[Column("TX_ATUALIZADO_EM")]
 		public long UpdatedAt { get; private set; }
 
 		private User()
