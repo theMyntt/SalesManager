@@ -12,9 +12,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Context\" />
+    <None Remove="Repositories\" />
+    <None Remove="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.20" />

@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <None Remove="Entities\" />
+    <None Remove="Schemas\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Schemas\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
